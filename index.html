@@ -353,6 +353,60 @@
       <!-- Модальное окно -->
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+          <form class="modal-form" autocomplete="off">
+            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+            <div class="form-field">
+              <input class="form-field-input" type="text" name="username" id="username" />
+              <svg class="lable-icon">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+              <label class="form-field-label" for="username"
+                ><span class="form-label-text">Имя</span>
+              </label>
+            </div>
+            <div class="form-field">
+              <input class="form-field-input" type="tel" name="user-nammber" id="user-nammber" />
+              <svg class="lable-icon">
+                <use href="./images/icons.svg#icon-phone-old"></use>
+              </svg>
+              <label class="form-field-label" for="user-nammber">
+                <span class="form-label-text">Телефон</span></label
+              >
+            </div>
+            <div class="form-field">
+              <input class="form-field-input" type="email" name="user-email" id="user-email" />
+              <svg class="lable-icon">
+                <use href="./images/icons.svg#icon-mail-alt"></use>
+              </svg>
+              <label class="form-field-label" for="user-email">
+                <span class="form-label-text">Почта</span></label
+              >
+            </div>
+
+            <div class="form-field comen">
+              <textarea
+                class="form-field-input comen"
+                name="text"
+                id="coment"
+                rows="5"
+                placeholder="Введите текст"
+              ></textarea>
+              <label class="form-field-label" for="coment">
+                <span class="form-label-text">Комментарий</span></label
+              >
+            </div>
+            <div class="checkbox">
+              <input class="checkbox-input" type="checkbox" name="policy" id="policy" />
+
+              <label class="checkbox-label" for="policy">
+                <svg class="checkbox-icon">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+                Соглашаюсь с рассылкой и принимаю <a href=""> Условия договора</a>
+              </label>
+            </div>
+            <button class="button-subscibe module" type="submit">Отправить</button>
+          </form>
           <button data-modal-close class="close" type="button">
             <svg class="modal-close-icon">
               <use href="./images/icons.svg#icon-close"></use>
@@ -411,6 +465,25 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer-links">
+          <h2 class="title">Подпишитесь на рассылку</h2>
+          <form class="form-subscibe">
+            <label for="email"></label>
+            <input
+              class="form-subscibe-input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+            />
+            <button class="button-subscibe" type="submit">
+              Подписаться
+              <svg class="button-subscibe-icon">
+                <use href="./images/icons.svg#icon-papeplain"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
