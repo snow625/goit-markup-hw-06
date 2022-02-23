@@ -569,11 +569,7 @@ img {
 }
 
 .modal-form {
-  margin: 40px;
-  width: 448px;
-
-  margin-left: auto;
-  margin-right: auto;
+  padding: 40px;
 }
 
 .form-field {
